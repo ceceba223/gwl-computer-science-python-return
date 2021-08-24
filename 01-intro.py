@@ -1,5 +1,4 @@
 from turtle import *
-from random import randint
 
 def rect(height, width):
     for ii in range(2):
@@ -40,7 +39,8 @@ def street(height, width, num_houses):
 
 def main():
     left(90)
-    
+    speed(100000)
+
     height = 100
     width = 50
     
