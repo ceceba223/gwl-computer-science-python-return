@@ -1,53 +1,54 @@
 from turtle import *
 
-def rect(height, width):
+def rect(lenght):
     for ii in range(2):
-        forward(height)
+        forward(lenght)
         right(90)
-        forward(width)
+        forward(lenght)
         right(90)
 
-def roof(width):
+def roof(lenght):
     for jj in range(3):
-        forward(width)
+        forward(lenght)
         right(120)
 
-def change_pos(height, back):
+def change_pos(lenght, back):
     if back:
         left(30)
-        backward(height)
+        backward(lenght)
     else:
-        forward(height)
+        forward(lenght)
         right(30)
 
-def house(height, width):
-    rect(height, width)
-    change_pos(height, back=False)
-    roof(width)
-    change_pos(height, back=True)
+def house(lenght):
+    rect(lenght)
+    change_pos(lenght, back=False)
+    roof(lenght)
+    change_pos(lenght, back=True)
 
-def street(height, width, num_houses):
+def street(lenght, num_houses):
     for kk in range(num_houses):
-        house(height, width)
+        house(lenght)
         
         right(90)
-        forward(width)
+        forward(lenght)
         left(90)
         
-        height += 20
-        width += 20
-    return height, width
+        lenght += 20
+        lenght += 20
+
+    return lenght
 
 def main():
     left(90)
     speed(100000)
 
-    height = 100
-    width = 50
+    lenght = 100
+    lenght = 50
     
-    height, width = street(height, width, 5)
+    lenght = street(lenght, 5)
 
-    house(height, width)
+    house(lenght)
     done()
 
 if __name__ == "__main__":
