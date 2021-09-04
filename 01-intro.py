@@ -26,8 +26,8 @@ def haus(laenge):
     dach(laenge)
     change_pos(laenge, back=True)
 
-def strasse(laenge, num_hauss):
-    for kk in range(num_hauss):
+def strasse(laenge, num_haus):
+    for kk in range(num_haus):
         haus(laenge)
         
         right(90)
@@ -35,18 +35,16 @@ def strasse(laenge, num_hauss):
         left(90)
         
         laenge += 20
-        laenge += 20
 
 def main():
     left(90)
     speed(100000)
 
     laenge = 100
-    laenge = 50
     
     strasse(laenge, 5)
 
-    #haus(laenge)
+    haus(laenge)
     done()
 
 if __name__ == "__main__":
