@@ -35,7 +35,6 @@ def strasse(laenge, num_hauss):
         left(90)
         
         laenge += 20
-        laenge += 20
 
     return laenge
 
@@ -44,7 +43,7 @@ def main():
     speed(100000)
 
     laenge = 100
-    laenge = 50
+
     
     laenge = strasse(laenge, 5)
 
