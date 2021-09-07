@@ -1,21 +1,21 @@
-x = 7
+erste_stufe = 7
 
 def outer():
-    y = 5
+    zweite_stufe = 5
     
     def inner():
-        z = 6
+        dritte_stufe = 6
 
-        print("x=", x)
-        print("y=", y)
-        print("z=", z)
+        print("erste_stufe=", erste_stufe)
+        print("zweite_stufe=", zweite_stufe)
+        print("dritte_stufe=", dritte_stufe)
     inner()
     
-    print("x=", x)
-    print("y=", y)
-    print("z=", z)
+    print("erste_stufe=", erste_stufe)
+    print("zweite_stufe=", zweite_stufe)
+    print("dritte_stufe=", dritte_stufe)
 outer()
 
-print("x=", x)
-print("y=", y)
-print("z=", z)
+print("erste_stufe=", erste_stufe)
+print("zweite_stufe=", zweite_stufe)
+print("dritte_stufe=", dritte_stufe)
